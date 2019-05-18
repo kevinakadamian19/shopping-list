@@ -1,7 +1,7 @@
 function addListItem() {
    $('#js-shopping-list-form').submit(function(event) {
         event.preventDefault();
-        const itemAddition = $('.js-shopping-list-entry').val();
+        const itemAddition = $('#shopping-list-entry').val();
         $('#shopping-list-entry').val('');
         $('.shopping-list').append(
         `<li>
